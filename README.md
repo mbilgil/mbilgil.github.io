@@ -1,6 +1,6 @@
 ## Preview
 
-[![Resume Preview](https://startbootstrap.com/assets/img/screenshots/themes/resume.png)](https://mbilgil.github.io)
+[![Resume Preview](https://github.com/mbilgil/mbilgil.github.io/blob/master/img/preview.png)](https://mbilgil.github.io)
 
 **[View Live Preview](https://mbilgil.github.io)**
 
