@@ -1,6 +1,6 @@
 ## Preview
 
-[![Resume Preview](https://startbootstrap.com/assets/img/screenshots/themes/resume.png)](https://mbilgil.github.io)
+[![Resume Preview](https://github.com/mbilgil/mbilgil.github.io/blob/master/img/preview.png)](https://mbilgil.github.io)
 
 **[View Live Preview](https://mbilgil.github.io)**
 
@@ -14,4 +14,4 @@
 
 ## Copyright and License
 
-Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-resume/blob/gh-pages/LICENSE) license.
+Copyright 2019 Mehmet Bilgil. Code released under the [MIT](https://github.com/mbilgil/mbilgil.github.io/blob/master/LICENSE) license.
