@@ -1,7 +1,5 @@
 /*!
- * Start Bootstrap - Resume v5.0.7 (https://startbootstrap.com/template-overviews/resume)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ * Author : Mehmet Bilgil
  */body{
      font-family:Muli,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
      padding-top:54px;
@@ -63,50 +61,111 @@
         font-size:3rem
     }
     .fa-bitbucket:hover{
-        color:#2684FF
-    }
-    .fa-git:hover{
-        color:#f1502f
-    }
-    .fa-sourcetree:hover{
-        color:#225dca
-    }
-    .fa-android:hover{
-        color:#8BC34A
-    }
-    .fa-github:hover{
-        color:#0c0f14
-    }
-    .fa-jira:hover{
-        color :#0052CC
-    }
-    .fa-java:hover{
-        color:#f89820
-    }
-    .fa-js:hover{
-        color: #f0db4f
-    }
-    .fa-html5:hover{
-        color:#E44D26
-    }
-    .fa-css3:hover{
-        color:#264de4
-    }
-    .fa-database:hover{
-        color:#7a0c00
-    }
-    .fa-npm:hover{
-        color:lightgreen
-    }
-    .fa-linkedin-in{
-        color:#225dca
-    }
-    .fa-twitter{
-        color: #00aced
-    }
-    .fa-medium{
-        color:#12100e
-    }
+    font-size:1.4em;
+    transition: 0.1s ease-out;
+}
+.fa-git:hover{
+    font-size:1.4em;
+    transition: 0.1s ease-out;
+}
+.fa-github:hover{
+    font-size:1.4em;
+    transition: 0.1s ease-out;
+}
+.fa-sourcetree:hover{
+    font-size:1.4em;
+    transition: 0.1s ease-out;
+}
+.fa-java:hover{
+    font-size:1.4em;
+    transition: 0.1s ease-out;
+}
+.fa-js:hover{
+    font-size:1.4em;
+    transition: 0.1s ease-out;
+}
+.fa-jira:hover{
+    font-size:1.4em;
+    transition: 0.1s ease-out;
+}
+.fa-database:hover{
+    font-size:1.4em;
+    transition: 0.1s ease-out;
+}
+.fa-android:hover{
+    font-size:1.4em;
+    transition: 0.1s ease-out;
+}
+.fa-npm:hover{
+    font-size:1.4em;
+    transition: 0.1s ease-out;
+}
+.fa-css3:hover{
+    font-size:1.4em;
+    transition: 0.1s ease-out;
+}
+.fa-html5:hover{
+    font-size:1.4em;
+    transition: 0.1s ease-out;
+}
+.fa-bitbucket:hover{
+    font-size:1.4em;
+    transition: 0.1s ease-out;
+}
+.fa-bitbucket{
+    color:#2684FF
+}
+.fa-git{
+    color:#f1502f
+}
+.fa-sourcetree{
+    color:#225dca
+}
+.fa-android{
+    color:#8BC34A
+}
+.fa-github{
+    color:#0c0f14
+}
+.fa-jira{
+    color :#0052CC
+}
+.fa-java{
+    color:#f89820
+}
+.fa-js{
+    color: #f0db4f
+}
+.fa-html5{
+    color:#E44D26
+}
+.fa-css3{
+    color:#264de4
+}
+.fa-database{
+    color:#7a0c00
+}
+.fa-npm{
+    color:lightgreen
+}
+.fa-linkedin-in{
+    color:#225dca
+}
+.fa-twitter{
+    color: #00aced
+}
+.fa-medium{
+    color:#12100e
+}
+   .fa-linkedin-in{
+       color:#225dca
+   }
+   .fa-twitter{
+       color: #00aced
+   }
+   .fa-medium{
+       color:#12100e
+   }
     #sideNav .navbar-nav .nav-item .nav-link{
         font-weight:800;
         letter-spacing:.05rem;
