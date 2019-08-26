@@ -10,10 +10,11 @@
 
   <link rel="icon" type="image/ico" href="img/logo.png" />
   <title>Mehmet Bilgil</title>
-
+   <!--Expreince Icon-->
+   <link href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css" rel="stylesheet">
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
   <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
@@ -94,50 +95,76 @@
       <div class="w-100">
         <h2 class="mb-5">Experience</h2>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Junior Software Developer</h3>
-            <div class="subheading mb-3">Ekol Logistics</div>
-            </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">October 2018 - Present</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Network Intern</h3>
-            <div class="subheading mb-3">BOTAS</div>
-            </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">July 2017 - August 2017</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Software Intern</h3>
-            <div class="subheading mb-3">Innova</div>
-            </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2017 - July 2017</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Part-Time Student Worker</h3>
-            <div class="subheading mb-3">Sakarya University</div>
-            </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">October 2016 - May 2017</span>
-          </div>
-        </div>
-
+        <div class="timeline">
+          <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+            <div class="timeline__event__icon ">
+              <i class="lni-code"></i>
         
-
+            </div>
+            <div class="timeline__event__date">
+               06.2017-07.2017
+            </div>
+            <div class="timeline__event__content ">
+              <div class="timeline__event__title">
+                Software Intern
+              </div>
+              <div class="timeline__event__description">
+                <p>Innova</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+            <div class="timeline__event__icon">
+             <i class="lni-signal"></i>
+            </div>
+            <div class="timeline__event__date">
+              07.2017-08.2017
+            </div>
+            <div class="timeline__event__content">
+              <div class="timeline__event__title">
+                Network Intern
+              </div>
+              <div class="timeline__event__description">
+                <p>BOTAS</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+            <div class="timeline__event__icon">
+              <i class="fas fa-university"></i>
+            </div>
+            <div class="timeline__event__date">
+               10.2016-05.2017
+            </div>
+            <div class="timeline__event__content">
+              <div class="timeline__event__title">
+                Part-Time Student Worker
+              </div>
+              <div class="timeline__event__description">
+                <p>Sakarya University</p>
+              </div>
         
-
+            </div>
+          </div>
+          <div class="timeline__event animated fadeInUp timeline__event--type1">
+            <div class="timeline__event__icon">
+              <i class="fas fa-truck"></i>
+        
+            </div>
+            <div class="timeline__event__date">
+              18.10.2018- ...
+            </div>
+            <div class="timeline__event__content">
+              <div class="timeline__event__title">
+                Junior Software Developer
+              </div>
+              <div class="timeline__event__description">
+                <p>Ekol Logistics</p>
+              </div>
+            </div>
+          </div>
+        
+        </div> 
       </div>
 
     </section>
@@ -148,26 +175,29 @@
       <div class="w-100">
         <h2 class="mb-5">Education</h2>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">University of Sakarya</h3>
-            <div class="subheading mb-3">Bachelor of Science</div>
-            <div>Computer Engineering</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2014 - June 2018</span>
-          </div>
-        </div>
+        <ul class="timeline-edu">
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Karlisu Anatolian Teacher Training High School</h3>
-            <div class="subheading mb-3">Pyhsics Sciences</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2010 - June 2014</span>
-          </div>
-        </div>
+          <!-- Item 1 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="flag">Sakarya University</span>
+                <span class="time-wrapper"><span class="time">2014 - 2018</span></span>
+              </div>
+              <div class="desc">Computer Engineering</div>
+            </div>
+          </li>
+          
+          <!-- Item 2 -->
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="flag">Karlisu A.T.T High School</span>
+                <span class="time-wrapper"><span class="time">2010 - 2014</span></span>
+              </div>
+              <div class="desc">Pyhsics Sciences</div>
+            </div>
+          </li>
 
       </div>
     </section>
@@ -177,47 +207,34 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
       <div class="w-100">
         <h2 class="mb-5">Skills</h2>
-
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-        <ul class="list-inline dev-icons">
-          <li class="list-inline-item">
-            <i class="fab fa-sourcetree" title="Source Tree"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-android" title="Android"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-bitbucket" title="Bitbucket"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-git" title="Git"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-jira" title="Jira"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-java" title="Java"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-github" title="Github"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-js" title="JavaScript"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-html5" title="HTML"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-css3" title="CSS"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fas fa-database" title="Oracle PL/SQL"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-npm" title="Node.js"></i>
-          </li>
-        </ul>
-
+        <main class="hexagon-container">
+            
+          <div class="hexagon color-android">
+              <i class="fab fa-android" title="Android"></i>
+          </div>
+          <div class="hexagon color-source-tree">
+              <i class="fab fa-sourcetree" title="Source Tree"></i>
+          </div>
+          <div class="hexagon color-git">
+              <i class="fab fa-git" title="Git"></i>
+          </div>
+          <div class="hexagon color-jira">
+              <i class="fab fa-jira" title="Jira"></i>
+          </div>
+          <div class="hexagon color-javascript">
+              <i class="fab fa-js" title="JavaScript"></i>
+          </div>
+          <div class="hexagon color-html5">
+              <i class="fab fa-html5" title="HTML"></i>
+          </div>
+          <div class="hexagon color-css3">
+              <i class="fab fa-css3" title="CSS"></i>
+          </div>
+          <div class ="hexagon color-database">
+              <i class="fas fa-database" title="Database"></i>
+          </div>
+        </main>
     </section>
 
     <hr class="m-0">
@@ -225,7 +242,7 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
       <div class="w-100">
         <h2 class="mb-5">Interests</h2>
-        <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber.</p>
+        <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
         <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
       </div>
     </section>
@@ -251,8 +268,35 @@
         </ul>
       </div>
     </section>
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="new-tab">
+      <div class="w-100">
+        <h2 class="mb-5">New &amp; Tab</h2>
+        <ul class="timeline-edu">
 
-  </div>
+          <!-- Item 1 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="flag">Sakarya University</span>
+                <span class="time-wrapper"><span class="time">2014 - 2018</span></span>
+              </div>
+              <div class="desc">Computer Engineering</div>
+            </div>
+          </li>
+          
+          <!-- Item 2 -->
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="flag">Karlisu A.T.T High School</span>
+                <span class="time-wrapper"><span class="time">2010 - 2014</span></span>
+              </div>
+              <div class="desc">Pyhsics Sciences</div>
+            </div>
+          </li>
+      </div>
+    </section>
+  
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
