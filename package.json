@@ -1,11 +1,11 @@
 {
-    "title": "Resume",
+    "title": "Mehmet Bilgil",
     "name": "startbootstrap-resume",
     "version": "5.0.7",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
     },
-    "description": "Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
+    "description": "cv template",
     "keywords": [
         "css",
         "sass",
@@ -14,19 +14,19 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/resume",
+    "homepage": "https://linkedin.com/mehmet-bilgil",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-resume/issues",
-        "email": "feedback@startbootstrap.com"
+        "url": "https://github.com/mbilgil/mbilgil.github.io",
+        "email": "mbilgil@hotmail.com"
     },
     "license": "MIT",
-    "author": "Start Bootstrap",
+    "author": "Mehmet Bilgil",
     "contributors": [
-        "David Miller (http://davidmiller.io/)"
+        "Mehmet Bilgil (http://mbilgil.github.io)"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-resume.git"
+        "url": "https://github.com/mbilgil/mbilgil.github.io"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.9.0",
