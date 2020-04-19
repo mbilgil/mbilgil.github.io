@@ -73,7 +73,7 @@
 
     transition: 0.1s ease-out;
 }
-.fa-sourcetree:hover{
+.fa-react:hover{
     font-size:3.4em;
     transition: 0.1s ease-out;
 }
@@ -85,7 +85,7 @@
     font-size:3.4em;
     transition: 0.1s ease-out;
 }
-.fa-jira:hover{
+.fa-java:hover{
     font-size:3.4em;
     transition: 0.1s ease-out;
 }
@@ -121,8 +121,8 @@
     color:#f1502f;
     font-size: 2.5rem;
 }
-.fa-sourcetree{
-    color:#225dca;
+.fa-react{
+    color:#61dafb;
     font-size: 2.5rem;
 }
 .fa-android{
@@ -133,7 +133,7 @@
     color:#0c0f14;
     font-size: 2.5rem;
 }
-.fa-jira{
+.fa-java{
     color :#0052CC;
     font-size: 2.5rem;
 }
