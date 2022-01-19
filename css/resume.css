@@ -48,7 +48,6 @@ p.lead {
 }
 
 .subheading {
-  text-transform: uppercase;
   font-weight: 500;
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 1.5rem;
@@ -58,7 +57,7 @@ p.lead {
   display: inline-block;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
+  background-color: #d7dbdf;
   color: #fff !important;
   border-radius: 100%;
   text-align: center;
@@ -189,4 +188,14 @@ a {
 
 a:hover, a:focus, a:active {
   color: #3193e4;
+}
+
+.turkcell-logo{
+  width: 60px;
+  height: 50px;
+}
+
+.ykb-logo{
+  width: 60px;
+  height: 50px;
 }
