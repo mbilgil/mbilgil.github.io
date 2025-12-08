@@ -89,12 +89,12 @@ npm run preview
 
 ### Automatic Deployment (Recommended) 🚀
 
-This project uses **GitHub Actions** for automatic deployment. Simply push to the `main` branch:
+This project uses **GitHub Actions** for automatic deployment. Simply push to the `master` branch:
 
 ```bash
 git add .
 git commit -m "Your update message"
-git push origin main
+git push origin master
 ```
 
 GitHub Actions will automatically build and deploy your changes. Check the **Actions** tab on GitHub to monitor deployment progress.

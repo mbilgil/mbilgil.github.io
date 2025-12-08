@@ -6,12 +6,12 @@ This project is configured with **GitHub Actions** for automatic deployment!
 
 ### How It Works
 
-Simply push your changes to the `main` branch:
+Simply push your changes to the `master` branch:
 
 ```bash
 git add .
 git commit -m "Your commit message"
-git push origin main
+git push origin master
 ```
 
 GitHub Actions will automatically:
@@ -29,7 +29,7 @@ After your first push, configure GitHub Pages:
    - **Source**: GitHub Actions
 4. Save the settings
 
-That's it! Every push to `main` will now auto-deploy! 🎉
+That's it! Every push to `master` will now auto-deploy! 🎉
 
 ---
 
