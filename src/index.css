@@ -1,0 +1,222 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Custom Properties for Theme Colors */
+:root {
+  /* Primary Colors */
+  --primary: #0ea5e9;
+  --primary-dark: #0284c7;
+  --primary-light: #38bdf8;
+
+  /* Accent Colors */
+  --accent: #8b5cf6;
+  --accent-secondary: #06b6d4;
+
+  /* Background Colors - Light Mode */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-card: #ffffff;
+
+  /* Text Colors - Light Mode */
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+
+  /* Borders & Shadows */
+  --border-light: rgba(0, 0, 0, 0.1);
+  --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+  /* Background Colors - Dark Mode */
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #1a1a2e;
+  --bg-card: #16213e;
+
+  /* Text Colors - Dark Mode */
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+
+  /* Borders & Shadows */
+  --border-dark: rgba(255, 255, 255, 0.1);
+  --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #0ea5e9, #d946ef);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #0284c7, #c026d3);
+}
+
+/* Utility Classes */
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glassmorphism {
+  background: rgba(10, 10, 15, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #0ea5e9, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #0ea5e9 0%, #8b5cf6 50%, #06b6d4 100%);
+}
+
+.section-container {
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16;
+}
+
+/* Animations */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+}
+
+/* Selection */
+::selection {
+  background-color: #0ea5e9;
+  color: white;
+}
+
+.dark ::selection {
+  background-color: #8b5cf6;
+  color: white;
+}
+
+/* Focus Styles */
+*:focus-visible {
+  outline: 2px solid #0ea5e9;
+  outline-offset: 2px;
+}
+
+.dark *:focus-visible {
+  outline-color: #8b5cf6;
+}
+
+/* Button Styles */
+.btn-primary {
+  @apply px-6 py-2.5 rounded-lg font-medium transition-all duration-300;
+  @apply bg-gradient-to-r from-primary-500 to-accent-500;
+  @apply text-white shadow-lg hover:shadow-xl;
+  @apply hover:scale-105 active:scale-95;
+}
+
+.btn-secondary {
+  @apply px-6 py-2.5 rounded-lg font-medium transition-all duration-300;
+  @apply bg-transparent border-2 border-primary-500;
+  @apply text-primary-500 hover:bg-primary-500 hover:text-white;
+  @apply hover:scale-105 active:scale-95;
+}
+
+.dark .btn-secondary {
+  @apply border-accent-500 text-accent-500 hover:bg-accent-500;
+}
+
+/* Card Styles */
+.card {
+  @apply bg-white dark:bg-slate-800 rounded-xl shadow-md;
+  @apply transition-all duration-300;
+  @apply border border-gray-200 dark:border-slate-700;
+}
+
+.card:hover {
+  @apply shadow-xl transform -translate-y-1;
+}
+
+/* Section Title */
+.section-title {
+  @apply text-3xl md:text-4xl font-bold font-heading mb-4;
+  @apply text-center;
+}
+
+.section-subtitle {
+  @apply text-base md:text-lg text-gray-600 dark:text-gray-400;
+  @apply text-center mb-8;
+}
+
+/* Loading Animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  border: 3px solid rgba(14, 165, 233, 0.3);
+  border-top-color: #0ea5e9;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 0.6s linear infinite;
+}

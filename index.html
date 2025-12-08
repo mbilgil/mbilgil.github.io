@@ -1,320 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Personal Resume/Portfolio Website">
-  <meta name="author" content="Mehmet Bilgil">
+  <!-- SEO Meta Tags -->
+  <title>Mehmet Bilgil - Expert Software Engineer | Backend Microservices</title>
+  <meta name="description"
+    content="Senior Software Engineer with 5+ years of experience in backend microservices using Java Spring Boot. Currently Expert Software Engineer at Turkcell, specializing in scalable enterprise solutions." />
+  <meta name="keywords"
+    content="Mehmet Bilgil, Software Engineer, Backend Developer, Java, Spring Boot, Microservices, Turkcell, Istanbul" />
+  <meta name="author" content="Mehmet Bilgil" />
 
-  <link rel="icon" type="image/ico" href="img/logo2.png" />
-  <title>Mehmet Bilgil</title>
-   <!--Expreince Icon-->
-   <link href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Dosis|Fjalla+One|Passion+One" rel="stylesheet">
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Mehmet Bilgil - Expert Software Engineer" />
+  <meta property="og:description"
+    content="Senior Software Engineer specializing in backend microservices with 5+ years of experience" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mbilgil.github.io" />
 
-  <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet">
-  <link href="css/resume.css" rel="stylesheet">
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mehmet Bilgil - Expert Software Engineer" />
+  <meta name="twitter:description" content="Senior Software Engineer specializing in backend microservices" />
+  <meta name="twitter:creator" content="@m_bilgil" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mehmet Bilgil",
+      "jobTitle": "Expert Software Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Turkcell"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Istanbul",
+        "addressCountry": "Turkey"
+      },
+      "sameAs": [
+        "https://github.com/mbilgil",
+        "https://twitter.com/m_bilgil"
+      ]
+    }
+    </script>
 </head>
 
-<body id="page-top">
-  <!-- <div class="loader__wrap" role="alertdialog" aria-busy="true" aria-live="polite" aria-label="Loading…">
-    <div class="loader" aria-hidden="true">
-      <div class="loader__sq"></div>
-      <div class="loader__sq"></div>
-    </div>
-  </div> -->
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">Mehmet Bilgil</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/app-dev.gif" alt="">
-      </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-        </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-        </li> -->
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container-fluid p-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-      <div class="w-100">
-        <h1 class="mb-0">Mehmet
-          <span class="text-primary">Bilgil</span>
-        </h1>
-        <div class="subheading mb-5">Istanbul,TURKEY
-          <a href="mailto:name@email.com">mbilgil@hotmail.com</a>
-        </div>
-        <p class="lead mb-5">I'm a software engineer who constantly seeks out innovative solutions to everyday
-          problems. In my two years in this industry, I've improved my analytical thinking and
-          collaboration skills, and I love working with a team.</p>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/mehmetbilgil/">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/mbilgil">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://twitter.com/m_bilgil">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="https://medium.com/@mbilgil0">
-            <i class="fab fa-medium"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
-      <div class="w-100">
-        <h2 class="mb-5">Experience</h2>
-
-        <div class="timeline">
-          <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
-            <div class="timeline__event__icon ">
-              <i class="lni-code"></i>
-
-            </div>
-            <div class="timeline__event__date">
-               06.2017-07.2017
-            </div>
-            <div class="timeline__event__content ">
-              <div class="timeline__event__title">
-                Software Intern
-              </div>
-              <div class="timeline__event__description">
-                <p>Innova</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
-            <div class="timeline__event__icon">
-             <i class="lni-signal"></i>
-            </div>
-            <div class="timeline__event__date">
-              07.2017-08.2017
-            </div>
-            <div class="timeline__event__content">
-              <div class="timeline__event__title">
-                Network Intern
-              </div>
-              <div class="timeline__event__description">
-                <p>BOTAS</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
-            <div class="timeline__event__icon">
-              <i class="fas fa-truck"></i>
-            </div>
-            <div class="timeline__event__date">
-              18.10.2018-01.03.2020
-            </div>
-            <div class="timeline__event__content">
-              <div class="timeline__event__title">
-                Junior Software Developer
-              </div>
-              <div class="timeline__event__description">
-                <p>Ekol Logistics</p>
-              </div>
-
-            </div>
-          </div>
-          <div class="timeline__event animated fadeInUp timeline__event--type1">
-            <div class="timeline__event__icon">
-              <img src="img/yapikredi-logo.png" class="ykb-logo">
-
-            </div>
-            <div class="timeline__event__date">
-              02.03.2020-17.09.2021
-            </div>
-            <div class="timeline__event__content">
-              <div class="timeline__event__title">
-                Software Developer
-              </div>
-              <div class="timeline__event__description">
-                <p>Yapı Kredi</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
-            <div class="timeline__event__icon">
-             <img src="img/turkcell.png" class="turkcell-logo">
-            </div>
-            <div class="timeline__event__date">
-              20.09.2021-Current
-            </div>
-            <div class="timeline__event__content">
-              <div class="timeline__event__title">
-                Software Development Specialist
-              </div>
-              <div class="timeline__event__description">
-                <p>Turkcell</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <hr class="m-0">
-
-    <!-- <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
-      <div class="w-100">
-        <h2 class="mb-5">Education</h2>
-
-        <section class="sec">
-          <div class="timeline-container">
-            <ul>
-              <li>
-                <span></span>
-                <div class="title">Sakarya University</div>
-                <div class="info">Computer Engineering</div>
-                <div class="time">
-                  <span>2014-2018</span>
-                  <span></span>
-                </div>
-              </li>
-              <li>
-                <span></span>
-                <div class="title">Karlisu Anatolian Teacher Training High School</div>
-                <div class="info">Pyhsics Sciences</div>
-                <div class="time">
-                  <span>2010-2014</span>
-                  <span></span>
-                </div>
-              </li>
-
-              <li>
-                <span></span>
-                <div class="title">Hayrettin Ozkan Primary School</div>
-                <div class="time">
-                  <span>2002-2010</span>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-    </section> -->
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-      <div class="w-100">
-        <h2 class="mb-5">Skills</h2>
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-        <main class="hexagon-container">
-
-          <div class="hexagon color-android">
-              <i class="fab fa-android" title="Android"></i>
-          </div>
-          <div class="hexagon color-react">
-              <i class="fab fab fa-react" title="React.js"></i>
-          </div>
-          <div class="hexagon color-git">
-              <i class="fab fa-git" title="Git"></i>
-          </div>
-          <div class="hexagon color-java">
-              <i class="fab fa-java" title="Java"></i>
-          </div>
-          <div class="hexagon color-javascript">
-              <i class="fab fa-js" title="JavaScript"></i>
-          </div>
-          <div class="hexagon color-html5">
-              <i class="fab fa-html5" title="HTML"></i>
-          </div>
-          <div class="hexagon color-css3">
-              <i class="fab fa-css3" title="CSS"></i>
-          </div>
-          <div class ="hexagon color-database">
-              <i class="fas fa-database" title="Database"></i>
-          </div>
-        </main>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
-      <div class="w-100">
-        <h2 class="mb-5">Interests</h2>
-        <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. </p>
-        <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
-      <div class="w-100">
-        <h2 class="mb-5">Seminars &amp; Certifications</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fas fa-award"></i>
-            Turkcell - Android 401</li>
-          <li>
-            <i class="fas fa-award"></i>
-            Sakarya University Honor Certificate</li>
-          <li>
-            <i class="fas fa-user-secret"></i>
-            BGA Cyber Camp 2018</li>
-          <li>
-            <i class="fas fa-user-secret"></i>
-            ADEO Cyber Camp 2018</li>
-        </ul>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-
-
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
-
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 
 </html>
