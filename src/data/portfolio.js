@@ -31,7 +31,7 @@ export const portfolioData = {
         {
             id: 1,
             company: "Turkcell",
-            logo: "/mbilgil.github.io/assets/images/company-logos/turkcell.png",
+            logo: "/assets/images/company-logos/turkcell.png",
             positions: [
                 {
                     title: "Expert Software Engineer",
@@ -67,7 +67,7 @@ export const portfolioData = {
         {
             id: 2,
             company: "Yapı Kredi Teknoloji",
-            logo: "/mbilgil.github.io/assets/images/company-logos/yapikredi.png",
+            logo: "/assets/images/company-logos/yapikredi.png",
             positions: [
                 {
                     title: "Software Development Specialist",
@@ -101,7 +101,7 @@ export const portfolioData = {
         {
             id: 3,
             company: "Ekol Lojistik",
-            logo: "/mbilgil.github.io/assets/images/company-logos/ekol.png",
+            logo: "/assets/images/company-logos/ekol.png",
             positions: [
                 {
                     title: "Junior Software Developer",
@@ -204,7 +204,7 @@ export const portfolioData = {
             field: "Computer Engineering",
             period: "2014 - 2018",
             location: "Sakarya, Turkey",
-            logo: "/mbilgil.github.io/assets/images/sakarya-university.png",
+            logo: "/assets/images/sakarya-university.png",
         },
         {
             id: 2,
