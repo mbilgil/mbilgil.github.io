@@ -129,34 +129,34 @@ const Contact = () => {
                                     href={social.github}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    whileHover={{ scale: 1.1, y: -5 }}
+                                    whileHover={{ scale: 1.15, y: -5 }}
                                     whileTap={{ scale: 0.9 }}
-                                    className="p-4 rounded-lg bg-white dark:bg-slate-900 hover:bg-gray-900 dark:hover:bg-white hover:text-white dark:hover:text-gray-900 transition-all duration-300"
+                                    className="p-5 rounded-xl bg-white dark:bg-slate-900 hover:bg-gray-900 dark:hover:bg-white hover:text-white dark:hover:text-gray-900 transition-all duration-300 shadow-md hover:shadow-xl"
                                     aria-label="GitHub"
                                 >
-                                    <FiGithub className="w-6 h-6" />
+                                    <FiGithub className="w-7 h-7" />
                                 </motion.a>
                                 <motion.a
                                     href={social.linkedin}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    whileHover={{ scale: 1.1, y: -5 }}
+                                    whileHover={{ scale: 1.15, y: -5 }}
                                     whileTap={{ scale: 0.9 }}
-                                    className="p-4 rounded-lg bg-white dark:bg-slate-900 hover:bg-blue-600 hover:text-white transition-all duration-300"
+                                    className="p-5 rounded-xl bg-white dark:bg-slate-900 hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-md hover:shadow-xl"
                                     aria-label="LinkedIn"
                                 >
-                                    <FiLinkedin className="w-6 h-6" />
+                                    <FiLinkedin className="w-7 h-7" />
                                 </motion.a>
                                 <motion.a
                                     href={social.twitter}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    whileHover={{ scale: 1.1, y: -5 }}
+                                    whileHover={{ scale: 1.15, y: -5 }}
                                     whileTap={{ scale: 0.9 }}
-                                    className="p-4 rounded-lg bg-white dark:bg-slate-900 hover:bg-sky-500 hover:text-white transition-all duration-300"
+                                    className="p-5 rounded-xl bg-white dark:bg-slate-900 hover:bg-sky-500 hover:text-white transition-all duration-300 shadow-md hover:shadow-xl"
                                     aria-label="Twitter"
                                 >
-                                    <FiTwitter className="w-6 h-6" />
+                                    <FiTwitter className="w-7 h-7" />
                                 </motion.a>
                             </div>
                         </div>
@@ -167,24 +167,30 @@ const Contact = () => {
                         <form onSubmit={handleSubmit(onSubmit)} className="card p-6 space-y-5">
                             {/* Name */}
                             <div>
-                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                <label htmlFor="name" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                                     Your Name *
                                 </label>
                                 <input
                                     id="name"
                                     type="text"
                                     {...register('name', { required: 'Name is required' })}
-                                    className="w-full px-4 py-2.5 rounded-lg border border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary dark:focus:ring-accent focus:border-transparent transition-all duration-200"
+                                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary dark:focus:ring-accent focus:border-primary dark:focus:border-accent transition-all duration-200 shadow-sm hover:shadow-md"
                                     placeholder="John Doe"
                                 />
                                 {errors.name && (
-                                    <p className="mt-1 text-sm text-red-500">{errors.name.message}</p>
+                                    <motion.p
+                                        initial={{ opacity: 0, y: -10 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        className="mt-2 text-sm text-red-500 flex items-center gap-1"
+                                    >
+                                        <span>⚠</span> {errors.name.message}
+                                    </motion.p>
                                 )}
                             </div>
 
                             {/* Email */}
                             <div>
-                                <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                <label htmlFor="email" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                                     Your Email *
                                 </label>
                                 <input
@@ -197,45 +203,63 @@ const Contact = () => {
                                             message: 'Invalid email address',
                                         },
                                     })}
-                                    className="w-full px-4 py-2.5 rounded-lg border border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary dark:focus:ring-accent focus:border-transparent transition-all duration-200"
+                                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary dark:focus:ring-accent focus:border-primary dark:focus:border-accent transition-all duration-200 shadow-sm hover:shadow-md"
                                     placeholder="john@example.com"
                                 />
                                 {errors.email && (
-                                    <p className="mt-1 text-sm text-red-500">{errors.email.message}</p>
+                                    <motion.p
+                                        initial={{ opacity: 0, y: -10 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        className="mt-2 text-sm text-red-500 flex items-center gap-1"
+                                    >
+                                        <span>⚠</span> {errors.email.message}
+                                    </motion.p>
                                 )}
                             </div>
 
                             {/* Subject */}
                             <div>
-                                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                                     Subject *
                                 </label>
                                 <input
                                     id="subject"
                                     type="text"
                                     {...register('subject', { required: 'Subject is required' })}
-                                    className="w-full px-4 py-2.5 rounded-lg border border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary dark:focus:ring-accent focus:border-transparent transition-all duration-200"
+                                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary dark:focus:ring-accent focus:border-primary dark:focus:border-accent transition-all duration-200 shadow-sm hover:shadow-md"
                                     placeholder="Project Inquiry"
                                 />
                                 {errors.subject && (
-                                    <p className="mt-1 text-sm text-red-500">{errors.subject.message}</p>
+                                    <motion.p
+                                        initial={{ opacity: 0, y: -10 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        className="mt-2 text-sm text-red-500 flex items-center gap-1"
+                                    >
+                                        <span>⚠</span> {errors.subject.message}
+                                    </motion.p>
                                 )}
                             </div>
 
                             {/* Message */}
                             <div>
-                                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                <label htmlFor="message" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                                     Message *
                                 </label>
                                 <textarea
                                     id="message"
                                     rows={5}
                                     {...register('message', { required: 'Message is required' })}
-                                    className="w-full px-4 py-2.5 rounded-lg border border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary dark:focus:ring-accent focus:border-transparent transition-all duration-200 resize-none"
+                                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary dark:focus:ring-accent focus:border-primary dark:focus:border-accent transition-all duration-200 resize-none shadow-sm hover:shadow-md"
                                     placeholder="Tell me about your project or opportunity..."
                                 />
                                 {errors.message && (
-                                    <p className="mt-1 text-sm text-red-500">{errors.message.message}</p>
+                                    <motion.p
+                                        initial={{ opacity: 0, y: -10 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        className="mt-2 text-sm text-red-500 flex items-center gap-1"
+                                    >
+                                        <span>⚠</span> {errors.message.message}
+                                    </motion.p>
                                 )}
                             </div>
 

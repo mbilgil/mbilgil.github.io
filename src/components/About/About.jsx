@@ -38,20 +38,38 @@ const About = () => {
                     >
                         {stats.map((stat, index) => {
                             const Icon = iconMap[stat.icon];
+                            // Unique gradient colors for each stat card
+                            const gradients = [
+                                'from-blue-500 to-cyan-500',
+                                'from-purple-500 to-pink-500',
+                                'from-green-500 to-emerald-500',
+                                'from-orange-500 to-red-500'
+                            ];
+                            const iconColors = [
+                                'text-blue-500 dark:text-cyan-400',
+                                'text-purple-500 dark:text-pink-400',
+                                'text-green-500 dark:text-emerald-400',
+                                'text-orange-500 dark:text-red-400'
+                            ];
                             return (
                                 <motion.div
                                     key={index}
                                     variants={staggerItem}
-                                    className="card p-6 text-center group hover:shadow-xl transition-all duration-300"
-                                    whileHover={{ scale: 1.05, y: -5 }}
+                                    className="card p-6 text-center group hover:shadow-2xl transition-all duration-300 relative overflow-hidden"
+                                    whileHover={{ scale: 1.05, y: -8 }}
                                 >
-                                    <Icon className="w-8 h-8 mx-auto mb-3 text-primary dark:text-accent group-hover:scale-110 transition-transform duration-300" />
-                                    <p className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-1">
-                                        {stat.value}
-                                    </p>
-                                    <p className="text-sm text-gray-600 dark:text-gray-400">
-                                        {stat.label}
-                                    </p>
+                                    {/* Gradient overlay on hover */}
+                                    <div className={`absolute inset-0 bg-gradient-to-br ${gradients[index]} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}></div>
+
+                                    <div className="relative z-10">
+                                        <Icon className={`w-8 h-8 mx-auto mb-3 ${iconColors[index]} group-hover:scale-125 transition-transform duration-300`} />
+                                        <p className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-1">
+                                            {stat.value}
+                                        </p>
+                                        <p className="text-sm text-gray-600 dark:text-gray-400 font-medium">
+                                            {stat.label}
+                                        </p>
+                                    </div>
                                 </motion.div>
                             );
                         })}

@@ -27,15 +27,6 @@ const Skills = () => {
         { title: 'Methodologies', skills: skills.methodologies, gradient: 'from-pink-500 to-rose-500' },
     ];
 
-    const getLevelColor = (level) => {
-        switch (level) {
-            case 'expert': return 'bg-green-500';
-            case 'advanced': return 'bg-blue-500';
-            case 'intermediate': return 'bg-yellow-500';
-            default: return 'bg-gray-500';
-        }
-    };
-
     return (
         <section id="skills" className="section-container bg-gray-50 dark:bg-slate-800">
             <motion.div
@@ -70,62 +61,27 @@ const Skills = () => {
                             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
                                 {category.skills.map((skill, skillIndex) => {
                                     const IconComponent = iconComponents[skill.icon];
+
                                     return (
                                         <motion.div
                                             key={skillIndex}
                                             variants={staggerItem}
                                             whileHover={{ scale: 1.05, y: -5 }}
-                                            className="card p-4 relative group cursor-pointer"
+                                            className="card p-6 relative group cursor-pointer overflow-hidden"
                                         >
-                                            {/* Certified Badge */}
-                                            {skill.certified && (
-                                                <div className="absolute top-2 right-2">
-                                                    <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center">
-                                                        <span className="text-white text-xs font-bold">✓</span>
-                                                    </div>
-                                                </div>
-                                            )}
-
                                             {/* Icon */}
-                                            <div className="flex justify-center mb-3">
+                                            <div className="flex justify-center mb-4">
                                                 {IconComponent && (
-                                                    <IconComponent className="w-8 h-8 text-gray-700 dark:text-gray-300 group-hover:text-primary dark:group-hover:text-accent transition-colors duration-300" />
+                                                    <IconComponent className="w-12 h-12 text-gray-700 dark:text-gray-300 group-hover:text-primary dark:group-hover:text-accent transition-colors duration-300" />
                                                 )}
                                             </div>
 
                                             {/* Skill Name */}
-                                            <h4 className="text-center text-sm font-semibold text-gray-900 dark:text-white mb-2">
+                                            <h4 className="text-center text-sm font-semibold text-gray-900 dark:text-white">
                                                 {skill.name}
                                             </h4>
 
-                                            {/* Level Indicator */}
-                                            <div className="flex items-center justify-center gap-1 mb-2">
-                                                {[1, 2, 3].map((dot) => (
-                                                    <div
-                                                        key={dot}
-                                                        className={`w-2 h-2 rounded-full ${(skill.level === 'expert' && dot <= 3) ||
-                                                            (skill.level === 'advanced' && dot <= 2) ||
-                                                            (skill.level === 'intermediate' && dot <= 1)
-                                                            ? getLevelColor(skill.level)
-                                                            : 'bg-gray-300 dark:bg-gray-600'
-                                                            }`}
-                                                    ></div>
-                                                ))}
-                                            </div>
-
-                                            {/* Details */}
-                                            <div className="text-center text-xs">
-                                                <p className="text-gray-600 dark:text-gray-400">
-                                                    {skill.years} years
-                                                </p>
-                                                {skill.endorsements > 0 && (
-                                                    <p className="text-xs text-gray-500 dark:text-gray-500">
-                                                        {skill.endorsements} endorsements
-                                                    </p>
-                                                )}
-                                            </div>
-
-                                            {/* Hover Effect - Gradient Border */}
+                                            {/* Gradient Border on Hover */}
                                             <div className={`absolute inset-0 rounded-xl bg-gradient-to-r ${category.gradient} opacity-0 group-hover:opacity-20 transition-opacity duration-300 pointer-events-none`}></div>
                                         </motion.div>
                                     );
@@ -134,31 +90,6 @@ const Skills = () => {
                         </motion.div>
                     ))}
                 </div>
-
-                {/* Legend */}
-                <motion.div
-                    variants={staggerItem}
-                    className="mt-12 flex flex-wrap items-center justify-center gap-6 text-sm"
-                >
-                    <div className="flex items-center gap-2">
-                        <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                        <span className="text-gray-700 dark:text-gray-300">Expert</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                        <div className="w-3 h-3 rounded-full bg-blue-500"></div>
-                        <span className="text-gray-700 dark:text-gray-300">Advanced</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                        <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                        <span className="text-gray-700 dark:text-gray-300">Intermediate</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                        <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center">
-                            <span className="text-white text-xs font-bold">✓</span>
-                        </div>
-                        <span className="text-gray-700 dark:text-gray-300">Certified</span>
-                    </div>
-                </motion.div>
             </motion.div>
         </section>
     );

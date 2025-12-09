@@ -6,7 +6,6 @@ export const portfolioData = {
         company: "Turkcell",
         location: "Istanbul, Turkey",
         email: "contact@mbilgil.com",
-        tagline: "Crafting scalable backend microservices for enterprise solutions",
         bio: "Highly motivated and results-oriented Senior Software Engineer with 5+ years of experience in designing, developing, and implementing backend microservices using Java with Spring Boot within Agile methodologies. Expertise includes integrating with technologies such as Kafka, Redis, PostgreSQL, MongoDB, RabbitMQ, and Kong. Proficient in testing applications with Unit Testing and ensuring code quality and security using SonarQube and Fortify. Passionate about creating innovative and scalable software solutions to solve complex business challenges.",
     },
 
@@ -21,7 +20,7 @@ export const portfolioData = {
     // Professional Summary Stats
     stats: [
         { label: "Years Experience", value: "5+", icon: "briefcase" },
-        { label: "Major Projects", value: "3", icon: "code" },
+        { label: "Major Projects", value: "4", icon: "code" },
         { label: "Current Role", value: "Expert SE", icon: "award" },
         { label: "Location", value: "Istanbul", icon: "map-pin" },
     ],
@@ -129,6 +128,7 @@ export const portfolioData = {
             company: "Turkcell",
             period: "Jan 2025 - Present",
             featured: true,
+            thumbnail: "/assets/images/projects/adplus.png",
             description: "Contributed to the development of the AdPlus Kobi digital advertising management platform, working with large-scale advertising systems to help small and medium businesses manage their digital campaigns effectively.",
             technologies: ["React.js", "Java", "Spring Boot", "Python", "Redis", "Openshift"]
         },
@@ -138,15 +138,27 @@ export const portfolioData = {
             company: "Turkcell",
             period: "Feb 2023 - Present",
             featured: true,
+            thumbnail: "/assets/images/projects/bipmeet.png",
             description: "Contributed to the development of Turkcell Suit Conference, a secure and scalable video conferencing platform built with a microservices architecture. Played a key role in implementing critical features for real-time communication.",
             technologies: ["Java", "Spring Framework", "Kafka", "Redis", "REST"]
         },
         {
             id: 3,
+            name: "Turkcell Yaani Search Engine",
+            company: "Turkcell",
+            period: "Sep 2021 - Feb 2023",
+            featured: true,
+            thumbnail: "/assets/images/projects/yaani.png",
+            description: "Worked as a Full-Stack Developer on Yaani, Turkey's native search engine and browser project, delivering end-to-end solutions from the user interface to high-performance backend systems. Designed and developed the microservices architecture based on Java Spring Boot, created user interfaces with React.js for a modern and fast user experience, and packaged applications using Docker images deployed onto the OpenShift platform. Utilized HashiCorp Consul for configuration management, Prometheus for metric monitoring, and Grafana for visualization. Ensured API documentation through Swagger integrations.",
+            technologies: ["Java", "Spring Boot", "React.js", "Docker", "OpenShift", "HashiCorp Consul", "Prometheus", "Grafana", "Swagger"]
+        },
+        {
+            id: 4,
             name: "Law Management System",
             company: "Yapı Kredi Teknoloji",
             period: "Feb 2021 - Aug 2021",
             featured: true,
+            thumbnail: "/assets/images/projects/law-management.png",
             description: "Developed a comprehensive Law Management System application for banking legal operations using modern Microservices architecture. The system streamlined legal case tracking, document management, and compliance processes for the bank's legal department, replacing legacy monolithic systems.",
             technologies: ["Java", "Spring Boot", "React.js", "RabbitMQ", "PL/SQL", "Oracle Database", "PostgreSQL", "Jenkins", "Pivotal Cloud Foundry", "Docker"]
         },
